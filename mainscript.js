@@ -25,9 +25,10 @@ document.getElementById("bedrijfBtwNummer").innerHTML = btwNummer;
 
 /*De huidige datum */
 
+
 var vraagDatum = new Date();
 var day;
-var days = ["zondag" ,"maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag",
+var days = ["Zondag" ,"Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag",
 ]
 
 

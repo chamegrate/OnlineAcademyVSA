@@ -1,0 +1,20 @@
+#vraagDatum {
+   text-align: right;
+}
+
+body {
+    background-color: tan;
+}
+
+.eersteTitel {
+    color: blue;
+    text-align: center;
+}
+
+#bedrijfBtwNummer {
+    text-align: right;
+}
+
+#bedrijfsgegevens {
+    text-align: right;
+}
