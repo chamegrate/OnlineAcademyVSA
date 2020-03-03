@@ -1,5 +1,7 @@
 #vraagDatum {
-   text-align: right;
+   position: absolute;
+   top: 3px;
+   right: 61px;
 }
 
 body {
@@ -7,6 +9,7 @@ body {
 }
 
 .eersteTitel {
+   font-family: Arial, Helvetica, sans-serif;
     color: blue;
     position: absolute;
     top: 3px;
@@ -22,7 +25,7 @@ body {
 
 #contact {
     position: absolute;
-    top: 25px;
+    top: 1px;
     left: 5px;
 }
      

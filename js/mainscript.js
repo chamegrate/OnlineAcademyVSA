@@ -34,7 +34,6 @@ bedrijfBtwNummerHTML.innerHTML = btwNummer;
 
 
 var vraagDatum = new Date();
-var day;
 var days = new Array ("Zondag" ,"Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag");
 
 
@@ -49,57 +48,59 @@ switch (new Date().getDay()){
     case 2:
         day = days[2];
         break;
-        case 3:
+     case 3:
             day = days [3];
         break;
-        case 4:
+    case 4:
             day = days [4];
         break;
-        case 5:
+    case 5:
             day = days [5];
         break;
-        case 6:
+     case 6:
             day = days [6];
-        default:
+    default:
              day = "onbepaald";
 }
-var maand;
+
+var manden = new Array ("januari","februari", "maart", "april","mei", "juni", "july",
+                        "augustus", "september", "oktober", "november", "december"  )
 switch (new Date().getMonth()) {
     case 0:
-        maand = "januari";
+        maand = manden[0];
         break;
     case 1:
-        maand = "februari";
+        maand = manden[1];
         break;
     case 2:
-        maand = "maart";
+        maand = manden[2];
         break;
     case 3:
-        maand = "april";
+        maand = manden[3];
         break;
     case 4:
-        maand = "mei";
+        maand = manden[4];
         break;
     case 5:
-        maand = "juni";
+        maand = manden[5];
         break;
     case 6:
-        maand = "july";
+        maand = manden[6];
         break;
     case 7:
-        maand = "augustus";
+        maand = manden[7];
         break;
     case 8:
-        maand = "september";
+        maand = manden[8];
         break;
     case 9:
-        maand ="oktober";
+        maand = manden[9];
         break;
     case 10:
-        maand = "november";
+        maand = manden[10];
         break;
     case 11:
-        maand ="december";
+        maand = manden[11];
         break;
     default:
         maand = "onbepaald";
@@ -107,8 +108,9 @@ switch (new Date().getMonth()) {
 
 var vandaag = vraagDatum.getDate() + " " + maand + " " + (vraagDatum.getFullYear());
 var vandaagHTML = document.getElementById("vraagDatum")
-vandaagHTML.innerHTML = day + "," + vandaag;
+vandaagHTML.innerHTML = day + "," + " " + vandaag;
  
+
 
 
 
