@@ -8,13 +8,22 @@ body {
 
 .eersteTitel {
     color: blue;
-    text-align: center;
+    position: absolute;
+    top: 3px;
+    right: 35vw;
+    text-decoration: underline;
 }
 
-#bedrijfBtwNummer {
-    text-align: right;
+.container {
+    position: absolute;
+    top: 25px;
+    right: 5px;
 }
 
-#bedrijfsgegevens {
-    text-align: right;
+#contact {
+    position: absolute;
+    top: 25px;
+    left: 5px;
 }
+     
+

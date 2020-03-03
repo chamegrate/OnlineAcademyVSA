@@ -11,12 +11,13 @@ var mailAdres = "vsa.mathieu@gmail.com";
 var linebreak = "<br>";
 var bedrijfAdres = bedrijfNaam + linebreak + straatNaam + "," + " " + straatNummer + linebreak +
     postCode + " " + gemeente;
-var bedrijfsgegevensHTML = document.getElementById("bedrijfsgegevens")
+var bedrijfsgegevensHTML = document.getElementById("bedrijfsgegevens");
+
 
 bedrijfsgegevensHTML.innerHTML = bedrijfAdres;
 
 
-var contact = webSiteAdres + linebreak + mailAdres
+var contact = webSiteAdres + linebreak + mailAdres;
 
 document.getElementById("contact").innerHTML = contact;
 
@@ -24,8 +25,8 @@ document.getElementById("contact").innerHTML = contact;
 
 var bedrijfLandCode = "be";
 var btwCijfers = "0999999999";
-var btwNummer = bedrijfLandCode.toUpperCase() + btwCijfers;
-var bedrijfBtwNummerHTML = document.getElementById("bedrijfBtwNummer")
+var btwNummer = "BTW-nummer: " + bedrijfLandCode.toUpperCase() + btwCijfers;
+var bedrijfBtwNummerHTML = document.getElementById("bedrijfBtwNummer");
 
 bedrijfBtwNummerHTML.innerHTML = btwNummer;
 
@@ -34,7 +35,7 @@ bedrijfBtwNummerHTML.innerHTML = btwNummer;
 
 var vraagDatum = new Date();
 var day;
-var days = new Array ("Zondag" ,"Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag")
+var days = new Array ("Zondag" ,"Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag");
 
 
 
@@ -108,6 +109,9 @@ var vandaag = vraagDatum.getDate() + " " + maand + " " + (vraagDatum.getFullYear
 var vandaagHTML = document.getElementById("vraagDatum")
 vandaagHTML.innerHTML = day + "," + vandaag;
  
+
+
+
 
 
 
