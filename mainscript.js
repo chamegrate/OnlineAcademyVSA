@@ -11,25 +11,31 @@ var mailAdres = "vsa.mathieu@gmail.com";
 var linebreak = "<br>";
 var bedrijfAdres = bedrijfNaam + linebreak + straatNaam + "," + " " + straatNummer + linebreak +
     postCode + " " + gemeente;
+var bedrijfsgegevensHTML = document.getElementById("bedrijfsgegevens")
 
-document.getElementById("bedrijfsgegevens").innerHTML = bedrijfAdres;
+bedrijfsgegevensHTML.innerHTML = bedrijfAdres;
 
-/*Datatypes */
+
+var contact = webSiteAdres + linebreak + mailAdres
+
+document.getElementById("contact").innerHTML = contact;
+
+/*Datatypes*/
 
 var bedrijfLandCode = "be";
-var bedrijfLandCodeUpperCase = bedrijfLandCode.toUpperCase();
 var btwCijfers = "0999999999";
-var btwNummer = bedrijfLandCodeUpperCase + btwCijfers;
+var btwNummer = bedrijfLandCode.toUpperCase() + btwCijfers;
+var bedrijfBtwNummerHTML = document.getElementById("bedrijfBtwNummer")
 
-document.getElementById("bedrijfBtwNummer").innerHTML = btwNummer;
+bedrijfBtwNummerHTML.innerHTML = btwNummer;
 
-/*De huidige datum */
+/*De huidige datum*/
 
 
 var vraagDatum = new Date();
 var day;
-var days = ["Zondag" ,"Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag",
-]
+var days = new Array ("Zondag" ,"Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag")
+
 
 
 switch (new Date().getDay()){
@@ -53,6 +59,8 @@ switch (new Date().getDay()){
         break;
         case 6:
             day = days [6];
+        default:
+             day = "onbepaald";
 }
 var maand;
 switch (new Date().getMonth()) {
@@ -90,12 +98,15 @@ switch (new Date().getMonth()) {
         maand = "november";
         break;
     case 11:
-        maand ="december"
+        maand ="december";
         break;
+    default:
+        maand = "onbepaald";
 }
 
 var vandaag = vraagDatum.getDate() + " " + maand + " " + (vraagDatum.getFullYear());
-document.getElementById("vraagDatum").innerHTML =  day + "," + vandaag;
+var vandaagHTML = document.getElementById("vraagDatum")
+vandaagHTML.innerHTML = day + "," + vandaag;
  
 
 
