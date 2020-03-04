@@ -30,6 +30,8 @@ var bedrijfBtwNummerHTML = document.getElementById("bedrijfBtwNummer");
 
 bedrijfBtwNummerHTML.innerHTML = btwNummer;
 
+
+
 /*De huidige datum*/
 
 
