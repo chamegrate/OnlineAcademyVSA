@@ -118,5 +118,3 @@ vandaagHTML.innerHTML = day + "," + " " + vandaag;
 
 
 
-
-
